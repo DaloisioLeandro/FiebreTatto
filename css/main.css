@@ -180,8 +180,10 @@ text-align: center;
     text-align: center;
  }
 /*estilo mobile*/
-@media  screen and {
-   .body{
-      
-   }
+@media  screen and (max-width:500px) {
+ main img{
+   width: 50%;
+ }
+ 
+  }
 }
