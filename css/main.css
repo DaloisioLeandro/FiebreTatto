@@ -179,3 +179,9 @@ text-align: center;
  .form-trabaja{
     text-align: center;
  }
+/*estilo mobile*/
+@media  screen and {
+   .body{
+      
+   }
+}
