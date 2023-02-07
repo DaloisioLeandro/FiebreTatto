@@ -98,6 +98,20 @@ header nav ul li a {
     main p {
         padding-bottom: 15px;
     }
+    
+    .animacion-siguenos {
+         width: 100px;
+         height: 100px;
+         position: relative;
+         background-repeat: black;
+         animation-name: example;
+         animation-duration: 5s;
+         font-size: 20px;
+       }
+       @keyframes example {
+         from {top:0;}
+         to {top: 100px; color: black;}
+       }
     /*estilos footer*/
     footer{
         text-align: center;
