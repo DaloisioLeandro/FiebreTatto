@@ -16,12 +16,14 @@ background-color: rgb(255, 255, 255);
 /*estilos de home*/
 .nav-index{
     text-align: right;
-    background-color: antiquewhite;
+    background-image: linear-gradient(rgba(202, 190, 64, 0.44),white);
     padding: 10px;
+   
  }
  
  .ul-index{
     list-style: none;
+    
  }
  header nav ul li{
     display: inline-block;
@@ -35,41 +37,25 @@ header nav ul li a {
 /*estilos de main*/
 /*estilos de boostrap*/
 
+.nav-mobile{
+   display: none;
+}
 
 .contenedor-carrusel{
-   max-width: 100%;
+   max-width: 80%;
    height: auto;
    display: flex;
-   justify-content: center;
-}
-.carrusel{
-
- width: 25%;
+   justify-content: left;
+   margin-left: 40px;
 }
 .contenedor-carrusel-2{
-   
+   max-width: 80%;
+   height: auto;
    display: flex;
-   justify-content: center;
+   justify-content: right;
+   
+}
 
-}
-.carrusel-2{
-   
-   width: 25%;
-}
-.contenedor-carrusel-3{
-   display: flex;
-   justify-content: center;
-}
-.carrusel-3{
-   width: 25%;
-}
-.contenedor-carrusel-4{
-   display: flex;
-   justify-content: center;
-}
-.carrusel-4{
-   width: 25%;
-}
    .primer-parrafo{
       background-image: linear-gradient(rgb(255, 255, 255),rgb(222, 217, 217),rgb(228, 227, 227));
 
@@ -97,6 +83,49 @@ header nav ul li a {
     }
     main p {
         padding-bottom: 15px;
+    }
+    .caja-envios{
+      display: inline-block;
+      font-size: 12px;
+      border: 1px solid rgb(202, 190, 64);
+       width: 30%;
+       height: 30%;
+       padding: 10px;
+       margin-right: 10px;
+    }
+    .h3-envios{
+      text-align: center;
+    }
+    .caja-envios-2{
+       display: inline-block;
+        font-size: 12px;
+        border: 1px solid rgb(202, 190, 64);
+        width: 30%;
+        height: 30%;
+        padding: 10px;
+    }
+    .h3-tarjeta{
+      text-align: center;
+    }
+    .camion{
+      width: 20%;
+      height: 20%;
+      transition: 2s;
+    }
+    .camion:hover{
+      width: 100px;
+      height: 100px;
+      
+      
+    }
+    .tarjeta{
+      width: 13%;
+      height: 13%;
+      transition: 2s;
+    }
+    .tarjeta:hover{
+     width: 80px;
+     height: 80px;
     }
     
     .animacion-siguenos {
@@ -203,9 +232,22 @@ header nav ul li a {
     text-align: center;
  }
 /*estilo mobile*/
-@media  screen and (max-width:500px) {
- main img{
-   width: 50%;
- }
+@media  screen and (min-width:320px) (max-width:500px) {
+   .nav-index{
+      display:none;
+   }
+   .nav-mobile{
+      
+   }
 
+   main img{
+   width: 50%;
+   
+ }
+      .caja{
+         display: flex;
+         flex-direction: column;
+
+      }
+      
   }
